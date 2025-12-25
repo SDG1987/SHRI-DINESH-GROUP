@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project - Shri Dinesh Group</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #333;
+    }
+
+    header {
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .header-container {
+      max-width: 1300px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+    }
+
+    .logo-img {
+      height: 90px;
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      font-weight: 500;
+      color: #333;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #007bff;
+    }
+
+    h1, h2 {
+      text-align: center;
+      font-weight: 700;
+      color: #222;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin: 48px 0 36px 0;
+    }
+
+    h2 {
+      margin-top: 60px;
+      font-size: 2rem;
+    }
+
+    p {
+      max-width: 1000px;
+      margin: 0 auto 36px auto;
+      text-align: center;
+      font-size: 1.12rem;
+      line-height: 1.7;
+      color: #333;
+      padding: 0 20px;
+    }
+
+    .timeline-section {
+      padding: 30px 20px 60px;
+      background-color: #ffffff;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background: #007bff;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+
+    .timeline-item {
+      position: relative;
+      width: 50%;
+      padding: 20px 40px;
+      box-sizing: border-box;
+    }
+
+    .timeline-item.left {
+      left: 0;
+    }
+
+    .timeline-item.right {
+      left: 50%;
+    }
+
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      top: 15px;
+      width: 20px;
+      height: 20px;
+      background: #007bff;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .timeline-item.left::after {
+      right: -10px;
+    }
+
+    .timeline-item.right::after {
+      left: -10px;
+    }
+
+    .timeline-content {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 5px solid #007bff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transform: scale(0.95);
+      opacity: 0;
+      transition: all 1s ease-out;
+    }
+
+    .timeline-content h3 {
+      margin: 0;
+      font-size: 24px;
+      color: #007bff;
+    }
+
+    .timeline-content h4 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+
+    .timeline-content p {
+      font-size: 16px;
+      color: #555;
+      margin: 0;
+    }
+
+    .project-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 30px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .project-gallery img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      opacity: 0;
+      transform: scale(0.9);
+      transition: all 1s ease-out;
+    }
+
+    .project-gallery img.show {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .animate-left.show .timeline-content {
+      transform: translateX(-50px) scale(1);
+      opacity: 1;
+    }
+
+    .animate-right.show .timeline-content {
+      transform: translateX(50px) scale(1);
+      opacity: 1;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 1s ease-out;
+    }
+
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media screen and (max-width: 768px) {
+      .timeline::after {
+        left: 10px;
+      }
+
+      .timeline-item {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 25px;
+      }
+
+      .timeline-item.left,
+      .timeline-item.right {
+        left: 0;
+      }
+
+      .timeline-item.left::after,
+      .timeline-item.right::after {
+        left: 0;
+      }
+
+      .animate-left.show .timeline-content,
+      .animate-right.show .timeline-content {
+        transform: translateY(0) scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="UPDATED LOGO.jpg" alt="Shri Dinesh Group Logo" class="logo-img">
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="crane-services.html" class="nav-link">Home</a></li>
+          <li><a href="equipment.html" class="nav-link">Equipment</a></li>
+          <li><a href="project.html" class="nav-link">Project</a></li>
+          <li><a href="equipment_clientele.html" class="nav-link">Clientele</a></li>
+          <li><a href="broker.html" class="nav-link">Broker</a></li>
+          <li><a href="career.html" class="nav-link">Career</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main style="padding-top: 120px;">
+    <h1 class="fade-in">Our Flagship Projects</h1>
+    <p class="fade-in">
+      We are proud to present a key project executed by Shri Dinesh Crane Services, highlighting our expertise in crane rental and heavy lifting solutions. This project completed safely and efficiently, showcasing our commitment to timely delivery, operational excellence, and client satisfaction.
+    </p>
+
+    <section class="timeline-section">
+      <div class="timeline">
+        <div class="timeline-item left animate-left">
+          <div class="timeline-content">
+            <h3>2014</h3>
+            <h4>Jamnagar Petrochemical Refinery, Gujarat</h4>
+            <p>Reliance, Equipment worth 50 Cr</p>
+          </div>
+        </div>
+        <div class="timeline-item right animate-right">
+          <div class="timeline-content">
+            <h3>2016</h3>
+            <h4>Agalega Project, Mauritius</h4>
+            <p>Afcons, Equipment worth 50 Cr</p>
+          </div>
+        </div>
+        <div class="timeline-item left animate-left">
+          <div class="timeline-content">
+            <h3>2018</h3>
+            <h4>MTHL Project, Mumbai</h4>
+            <p>Tata Projects, L&T, Equipment worth 100 Cr</p>
+          </div>
+        </div>
+        <div class="timeline-item right animate-right">
+          <div class="timeline-content">
+            <h3>2022</h3>
+            <h4>GMC Project, Maldives</h4>
+            <p>Afcons, Equipment worth 50 Cr</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p class="fade-in">
+      Out of over 500 lifting projects completed successfully, our flagship domestic projects include Unao Agra Expressway, Signature Bridge Delhi, Sahara Airport Hotel Mumbai, Metro (Mumbai, Delhi & Kolkata), Reliance Refinery, Zuari Bridge Project Goa, and MTHL Mumbai.<br><br>
+      Mauritius Metro, Tema Akosomba Railway Projects Ghana, Agalega Project Mauritius, and Mannar Island WTG Project Sri Lanka are our flagship international projects.
+    </p>
+
+    <h2 class="fade-in">More Projects We've Proudly Delivered</h2>
+    <p class="fade-in">
+      <strong>Dalmia Cement Bharat Limited (Umrangso)</strong><br>
+      Shri Dinesh Crane Services provided lifting solutions for Dalmia Cement Bharat Limited at their Barmer site, supporting the installation of heavy machinery and structural components. Our team ensured safe, efficient handling, meeting project deadlines and safety standards.
+    </p>
+
+    <div class="project-gallery">
+      <img src="DALMIA PROJECT.jpeg" alt="Dalmia Cement Project 1" class="project-img">
+      <img src="OSM.jpeg" alt="Dalmia Cement Project 2" class="project-img">
+    </div>
+  </main>
+
+  <script>
+    const options = { threshold: 0.2 };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, options);
+
+    document.querySelectorAll('.animate-left, .animate-right, .fade-in, .project-img').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crane Services - Shri Dinesh Group</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Add these styles for the image carousel */
+        .crane-carousel {
+            width: 100%;
+            overflow: hidden;
+            margin: 30px 0;
+            position: relative;
+            height: 700px; /* Increased height for better visibility */
+        }
+        
+        .crane-slides {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            animation: slide 5s infinite ease-in-out;
+        }
+        
+        .crane-slide {
+            width: 33.33%;
+            flex-shrink: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f5f5f5;
+        }
+        
+        .crane-slide img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+        
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            28% { transform: translateX(0); }
+            33% { transform: translateX(-33.33%); }
+            61% { transform: translateX(-33.33%); }
+            66% { transform: translateX(-66.66%); }
+            94% { transform: translateX(-66.66%); }
+            100% { transform: translateX(0); }
+        }
+        
+        /* Pause animation on hover */
+        .crane-carousel:hover .crane-slides {
+            animation-play-state: paused;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .crane-carousel {
+                height: 350px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .crane-carousel {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-container">
+            <div class="back-to-home">
+                <a href="index.html" class="back-link">← Back to Home</a>
+            </div>
+            
+            <div class="logo">
+                <a href="index.html">
+                    <img src="UPDATED LOGO.jpg" alt="Shri Dinesh Group Logo" class="logo-img">
+                </a>
+            </div>
+            
+            <div class="page-header-inline">
+                <h1 class="page-title">Crane Services</h1>
+                <p class="page-subtitle">Professional heavy lifting and crane operations for industrial projects</p>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="crane-services.html" class="nav-link">Home</a></li>
+                    <li><a href="equipment.html" class="nav-link">Equipment</a></li>
+                    <li><a href="project.html" class="nav-link">Project</a></li>
+                    <li><a href="equipment_clientele.html" class="nav-link">Clientele</a></li>
+                    <li><a href="broker.html" class="nav-link">Broker</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <!-- CTA buttons removed as per request -->
+            </div>
+        </div>
+    </header>
+                
+                <!-- Improved Crane Image Carousel -->
+                <div class="crane-carousel">
+                    <div class="crane-slides">
+                        <div class="crane-slide">
+                            <img src="SDG CRANE.jpg" alt="SDG Crane">
+                        </div>
+                        <div class="crane-slide">
+                            <img src="TYRE CRANE 1.jpg" alt="Tyre Crane 1">
+                        </div>
+                        <div class="crane-slide">
+                            <img src="TYRE CRANE 2.jpg" alt="Tyre Crane 2">
+                        </div>
+                    </div>
+                </div>
+                
+                <section class="about-us-section">
+                    <div class="about-us-container">
+                        <h2 class="about-us-title">About Us</h2>
+                        <p class="about-us-text">
+                            Shri Dinesh Group's Crane Division is one of India's leading providers of lifting solutions, serving large-scale infrastructure projects across Asia, Africa, and the Middle East. With a diverse fleet of tyre-mounted cranes ranging from 25 to 1000 tonnes and crawler cranes ranging from 80 to 800 tonnes, we are equipped to handle the most demanding lifting requirements with safety, precision, and reliability.
+                        </p>
+                        <p class="about-us-text">
+                            We operate at the heart of the infrastructure economy—spanning roads and bridges, oil refineries, iron, steel, and cement plants, and the full spectrum of energy generation: thermal, hydro, solar, and wind. Our cranes are also active across metro networks, railways, airports, sea ports, and mega-projects like the Mumbai–Ahmedabad High Speed Rail Corridor (MAHSR), Atal Setu, and the Greater Male Connectivity Project in the Maldives.
+                        </p>
+                        <p class="about-us-text">
+                            Our clientele includes industry leaders such as Adani Group, Reliance, Tata Group, L&T, Vedanta, Afcons, Ultratech Cement, and Dalmia Bharat—many of whom are repeat customers, owing to our unwavering focus on execution excellence and customer satisfaction.
+                        </p>
+                        <h3 class="about-us-subtitle">What sets us apart:</h3>
+                        <ul class="about-us-list">
+                            <li>A highly skilled operator team, continuously trained and upskilled through structured programs</li>
+                            <li>Close collaboration with OEMs—our engineering team actively advises manufacturers on customizing machines for Indian terrain and project conditions</li>
+                            <li>Strong relationships with our lending partners, built on a legacy of zero EMI defaults and financial discipline.</li>
+                        </ul>
+                        <p class="about-us-text">
+                            Led by five brothers who are highly educated, deeply committed, and growth-oriented, the Shri Dinesh Crane Division reflects the ambition of building not just a business—but a lasting legacy. Our vision is to become the largest family-run crane services company in the world, built on principles that endure across generations.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Details -->
+    <section class="service-details">
+        <div class="container">
+            <div class="details-grid">
+                <div class="detail-card">
+                    <h3>Heavy Lifting</h3>
+                    <p>Specialized heavy lifting services for industrial equipment, machinery, and construction materials. Our experienced team ensures safe and efficient operations.</p>
+                    <ul>
+                        <li>Equipment relocation</li>
+                        <li>Machinery installation</li>
+                        <li>Construction support</li>
+                        <li>Emergency lifting services</li>
+                    </ul>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Crane Rental</h3>
+                    <p>Flexible crane rental solutions for short-term and long-term projects. We offer various crane types to meet your specific requirements.</p>
+                    <ul>
+                        <li>Mobile cranes</li>
+                        <li>Tower cranes</li>
+                        <li>Crawler cranes</li>
+                        <li>Specialty cranes</li>
+                    </ul>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Project Management</h3>
+                    <p>Complete project management services including planning, coordination, and execution of complex lifting operations.</p>
+                    <ul>
+                        <li>Site assessment</li>
+                        <li>Safety planning</li>
+                        <li>Permit coordination</li>
+                        <li>Quality assurance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Crane Services?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">🏗️</div>
+                    <h3>Experience</h3>
+                    <p>Over 35 years of experience in industrial crane operations</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Safety First</h3>
+                    <p>Rigorous safety protocols and certified operators</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>24/7 Availability</h3>
+                    <p>Emergency services available round the clock</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📋</div>
+                    <h3>Certified</h3>
+                    <p>All equipment and operators are fully certified</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Founders Section -->
+    <section class="founders-section">
+        <div class="container">
+            <h2 class="section-title">Meet Our Founders</h2>
+            <div class="founders-grid">
+                <div class="founder-card">
+                    <img src="SUMIT JOSHI.jpg" alt="Sumit Joshi" class="founder-img">
+                    <h3 class="founder-name">Sumit Joshi</h3>
+                </div>
+                <div class="founder-card">
+                    <img src="Ashwin Joshi.jpg" alt="Ashwin Joshi" class="founder-img">
+                    <h3 class="founder-name">Ashwin Joshi</h3>
+                </div>
+                <div class="founder-card">
+                    <img src="KARTIK JOSHI.jpg" alt="Kartik Joshi" class="founder-img">
+                    <h3 class="founder-name">Kartik Joshi</h3>
+                </div>
+            </div>
+            <div class="founders-grid founders-grid-double">
+                <div class="founder-card">
+                    <img src="Shrey Joshi.jpg" alt="Shrey Joshi" class="founder-img">
+                    <h3 class="founder-name">Shrey Joshi</h3>
+                </div>
+                <div class="founder-card">
+                    <img src="MANAN JOSHI.jpg" alt="MANAN JOSHI" class="founder-img">
+                    <h3 class="founder-name">Manan Joshi</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Section -->
+    <section class="career-section">
+        <div class="container">
+            <div class="career-content">
+                <h2 class="section-title">Join Our Team</h2>
+                <p class="section-description">We're always looking for talented individuals to join our growing team. Submit your resume and we'll contact you if there's a suitable position available.</p>
+                <button class="submit-resume-btn" onclick="openResumePopup()">Submit Resume</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Popup -->
+    <div id="resumePopup" class="popup-overlay">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeResumePopup()">&times;</span>
+            <h2>Submit Your Resume</h2>
+            <form class="resume-form" id="resumeForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="position">Position Interested In</label>
+                    <input type="text" id="position" name="position">
+                </div>
+                <div class="form-group">
+                    <label for="experience">Years of Experience</label>
+                    <select id="experience" name="experience">
+                        <option value="">Select</option>
+                        <option value="0-1">0-1 years</option>
+                        <option value="2-5">2-5 years</option>
+                        <option value="6-10">6-10 years</option>
+                        <option value="10+">10+ years</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="resume">Upload Resume *</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional Information</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us more about your skills and experience"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="cancel-btn" onclick="closeResumePopup()">Cancel</button>
+                    <button type="submit" class="submit-btn">Submit Resume</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Removed logo and links -->
+            </div>
+            <div class="footer-extra">
+                <div class="footer-contact-columns">
+                    <div class="footer-contact-block">
+                        <h3>HEAD OFFICE ADDRESS</h3>
+                        <p>902-903, B- Wing, Lodha Supremus II,<br>Road No. 22, Waghle Estate,<br>Thane W-400604, Mumbai Maharashtra</p>
+                    </div>
+                    <div class="footer-contact-block">
+                        <h3>CONTACT</h3>
+                        <p>022-61563441/4423</p>
+                        <p>dineshcranesservice@gmail.com</p>
+                        <p>bookings.cranes@shridinesh.com</p>
+                        <p>operation.cranes@shridinesh.com</p>
+                    </div>
+                    <div class="footer-contact-block">
+                        <div class="footer-quote-form">
+                            <h3>ENQUIRY</h3>
+                            <input type="email" id="quote-email" placeholder="Email Address" required>
+                            <input type="text" id="quote-requirement" placeholder="Crane Requirement" required>
+                            <input type="text" id="quote-location" placeholder="Location" required>
+                            <button type="button" id="quote-submit" class="footer-quote-btn">REACH OUT US</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shri Dinesh Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Basic script to handle quote form submission
+        document.getElementById('quote-submit').addEventListener('click', function() {
+            const email = document.getElementById('quote-email').value;
+            const requirement = document.getElementById('quote-requirement').value;
+            const location = document.getElementById('quote-location').value;
+
+            if (email && requirement && location) {
+                console.log('Quote Request:', { email, requirement, location });
+                alert('Quote request submitted! Check console for details.');
+                // Add actual submission logic here (e.g., API call) when backend is available
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -624,7 +624,7 @@ html {
 /* Hero Image Section */
 .hero-image {
     position: relative;
-    height: 70vh;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -2164,4 +2164,5 @@ html {
     margin-left: auto;
     margin-right: auto;
     line-height: 1.7;
+
 } 

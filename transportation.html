@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportation - Shri Dinesh Group</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-container">
+            <div class="back-to-home">
+                <a href="index.html" class="back-link">← Back to Home</a>
+            </div>
+            
+            <div class="logo">
+                <a href="index.html">
+                    <img src="UPDATED LOGO.jpg" alt="Shri Dinesh Group Logo" class="logo-img">
+                </a>
+            </div>
+            
+            <div class="page-header-inline">
+                <h1 class="page-title">Transportation</h1>
+                <p class="page-subtitle">Logistics and transportation services for industrial and commercial needs</p>
+            </div>
+
+            <div class="header-cta">
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Video Section -->
+    <section class="hero-image">
+        <div class="hero-image-container">
+            <video autoplay muted loop playsinline class="hero-vid">
+                <source src="transportation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-overlay">
+                <div class="container">
+                    <h2>Reliable Transportation Solutions</h2>
+                    <p>Connecting industries through efficient logistics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>Our Transportation Expertise</h2>
+                <p>With a fleet of 100+ well-maintained trucks and a team of 20+ professionals, we provide reliable transportation solutions to leading clients. Backed by 40+ years of experience, we ensure safe and timely movement of goods from factories to warehouses.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Career Section -->
+    <section class="career-section">
+        <div class="container">
+            <div class="career-content">
+                <h2 class="section-title">Join Our Team</h2>
+                <p class="section-description">We're always looking for talented individuals to join our growing team. Submit your resume and we'll contact you if there's a suitable position available.</p>
+                <button class="submit-resume-btn" onclick="openResumePopup()">Submit Resume</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Resume Popup -->
+    <div id="resumePopup" class="popup-overlay">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeResumePopup()">&times;</span>
+            <h2>Submit Your Resume</h2>
+            <form class="resume-form" id="resumeForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="position">Position Interested In</label>
+                    <input type="text" id="position" name="position">
+                </div>
+                <div class="form-group">
+                    <label for="experience">Years of Experience</label>
+                    <select id="experience" name="experience">
+                        <option value="">Select</option>
+                        <option value="0-1">0-1 years</option>
+                        <option value="2-5">2-5 years</option>
+                        <option value="6-10">6-10 years</option>
+                        <option value="10+">10+ years</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="resume">Upload Resume *</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional Information</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us more about your skills and experience"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="cancel-btn" onclick="closeResumePopup()">Cancel</button>
+                    <button type="submit" class="submit-btn">Submit Resume</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Optimize Your Transportation</h2>
+                <p>Contact our logistics experts to discuss your transportation needs and get a customized solution.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                    <a href="index.html" class="btn btn-secondary">Back to Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Removed logo and links -->
+            </div>
+            <div class="footer-extra">
+                <div class="footer-contact-columns">
+                    <div class="footer-contact-block">
+                        <h3>HEAD OFFICE </h3>
+                        <p>902-903, B- Wing, Lodha Supremus II,<br>Road No. 22, Wagle Estate,<br>Thane West, Mumbai, Maharashtra - 400604</p>
+                        <h3 class="branch-title">BRANCH OFFICE</h3>
+                        <h4>JAIPUR</h4>
+                        <p>F-1, Evershine Tower,<br>Amrapali Circle, Vaishali Nagar, Jaipur, Rajasthan - 302021</p>
+                        <h4>UDAIPUR</h4>
+                        <p>Kanchan Seva Sanstha,<br> Near Gokul Properties<br>Bhatewar, Rajasthan - 313602</p>
+                    </div>
+                    <div class="footer-contact-block">
+                        <h3>CONTACT</h3>
+                        <p>022-61563441/4423</p>
+                        <p>bookings.cranes@shridinesh.com</p>
+                        <p>bookings.warehousing@shridinesh.com</p>
+                        <p>bookings.transportation@shridinesh.com</p>
+                    </div>
+                    <div class="footer-contact-block">
+                        <form class="footer-quote-form">
+                            <h3>ENQUIRY</h3>
+                            <input type="email" placeholder="Email Address" required>
+                            <input type="text" placeholder="Crane Requirement" required>
+                            <input type="text" placeholder="Location" required>
+                            <button type="submit" class="footer-quote-btn">REACH OUT US</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 1987 Shri Dinesh Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // JavaScript functions for resume popup
+        function openResumePopup() {
+            document.getElementById('resumePopup').style.display = 'flex';
+        }
+        
+        function closeResumePopup() {
+            document.getElementById('resumePopup').style.display = 'none';
+        }
+        
+        // Close popup when clicking outside of it
+        window.onclick = function(event) {
+            const popup = document.getElementById('resumePopup');
+            if (event.target === popup) {
+                closeResumePopup();
+            }
+        }
+        
+        // Handle form submission
+        document.getElementById('resumeForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // In a real implementation, you would send the form data to a server here
+            alert('Resume submitted successfully!');
+            
+            // Close the popup after submission
+            closeResumePopup();
+            
+            // Reset the form
+            this.reset();
+        });
+    </script>
+</body>
+</html> 

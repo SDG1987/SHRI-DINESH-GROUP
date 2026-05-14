@@ -2698,10 +2698,10 @@ video:first-of-type {
 .title-mobile {
     display: flex;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 55px;
+    transform: none;
     white-space: nowrap;
-    text-align: center;
+    text-align: left;
     font-size: 1.1rem;
     font-weight: 700;
     pointer-events: none;

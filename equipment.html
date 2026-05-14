@@ -4,63 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clientele - Shri Dinesh Group</title>
+    <title>Equipment - Shri Dinesh Group</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Animation styles */
-        #main-heading,
-        #main-description,
-        #cement-heading,
-        #infra-heading,
-        #steel-heading,
-        #bullet-heading,
-        #rail-heading,
-        #metro-heading,
-        #aviation-heading,
-        #seaport-heading,
-        #renewable-heading,
-        div.client-logo-container {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: all 1s ease-in-out;
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        #main-heading.animate,
-        #main-description.animate,
-        #cement-heading.animate,
-        #infra-heading.animate,
-        #steel-heading.animate,
-        #bullet-heading.animate,
-        #rail-heading.animate,
-        #metro-heading.animate,
-        #aviation-heading.animate,
-        #seaport-heading.animate,
-        #renewable-heading.animate,
-        div.client-logo-container.animate {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .footer-contact-block {
-            text-align: left;
-        }
-
-        .footer-contact-block p {
-            text-align: left;
-            margin-bottom: 10px;
-        }
-
-        .footer-contact-block h3 {
-            text-align: left;
-        }
-
-        .footer-quote-form {
-            text-align: left;
-        }
-
-        .footer-quote-form input {
-            text-align: left;
+        .slide-animation {
+            animation: slideInUp 1s cubic-bezier(0.23, 1, 0.32, 1);
         }
     </style>
 </head>
@@ -81,11 +42,12 @@
             <!-- Back arrow -->
             <a href="index.html" class="header-back-btn">&#10094;</a>
 
-            <span class="title-mobile"><b>Clientele</b></span>
+
+            <span class="title-mobile"><b>Equipment</b></span>
 
             <div class="title-desktop">
-                <div class="title-desktop-title">Clientele</div>
-                <div class="title-desktop-sub">Trusted by Industry Leaders Across Various Sectors</div>
+                <div class="title-desktop-title">Equipment</div>
+                <div class="title-desktop-sub">Our Fleet & Maintenance Standards</div>
             </div>
 
 
@@ -120,105 +82,77 @@
             <a href="broker.html" class="mobile-cta-button mobile-cta-secondary">Broker</a>
         </div>
     </header>
-
-    <main>
-
+    <main class="slide-animation" style="display:block !important; visibility:visible !important;">
         <div class="container">
-            <h1 id="main-heading" class="page-title">Trusted by Industry Leaders</h1>
-            <p id="main-description"
-                style="margin:0 auto 36px auto;text-align:center;font-size:1.12rem;line-height:1.7;color:#333;">
-                Trusted by Industry Leaders Across Various Sectors, Shri Dinesh Crane Services is proud to serve an
-                esteemed roster of clients who count on us for their most critical lifting and transport needs. Our
-                commitment to excellence and safety has made us the partner of choice for companies striving for project
-                efficiency and reliability. Explore some of the organizations who have put their trust in our expertise
-                and solutions.
-            </p>
-            <h2 id="cement-heading"
-                style="text-align:center;font-size:1.5rem;font-weight:600;margin-bottom:28px;color:#222;">Trusted by
-                Cement Leaders</h2>
-            <div id="cement-logos" class="client-logo-container"
-                style="display:flex;justify-content:center;align-items:center;gap:60px;margin-bottom:48px;flex-wrap:wrap;">
-                <img src="ADANI CEMENT.jpg" alt="Adani Cement" style="max-height:100px;width:auto;object-fit:contain;">
-                <img src="Dalmia CEMENT.webp" alt="Dalmia Cement"
-                    style="max-height:100px;width:auto;object-fit:contain;">
-                <img src="JK-Cement.webp" alt="JK Cement" style="max-height:100px;width:auto;object-fit:contain;">
+            <h1 class="page-title">About Our Equipment Services</h1>
+        </div>
+        <div class="container"
+            style="display:flex;gap:40px;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;">
+            <div style="flex:1 1 0;min-width:290px;max-width:600px;text-align:left;">
+                <h2 style="font-size:1.3rem;font-weight:bold;margin-bottom:14px;">Crawler Crane</h2>
+                <p style="font-size:1.07rem;line-height:1.7;color:#222;text-align:justify" class="slide-animation">
+                    Since its inception in 1988, Shri Dinesh Crane Services has been a trusted name in crane rental
+                    solutions across India, delivering top-tier crawler cranes for complex lifting operations. Designed
+                    for exceptional stability, our crawler cranes excel on challenging terrains, making them perfect for
+                    infrastructure, power plants, and heavy industrial projects. each crane is rigorously maintained to
+                    ensure peak efficiency and safety. Shri Dinesh Crane Services combines cutting-edge technology with
+                    experienced operators to provide customized, dependable solutions for every project.
+                </p>
+                <img src="crawler-mobile-crane.jpg" alt="Crawler Crane"
+                    style="width:80%;border-radius:20px;margin-top:20px;" class="slide-animation">
             </div>
-            <h2 id="infra-heading"
-                style="text-align:center;font-size:1.5rem;font-weight:600;margin-bottom:28px;color:#222;">Our
-                Infrastructure Partners</h2>
-            <div id="infra-logos" class="client-logo-container"
-                style="display:flex;justify-content:center;align-items:center;gap:60px;margin-bottom:48px;flex-wrap:wrap;">
-                <img src="L & T.webp" alt="L & T" style="max-height:100px;width:auto;object-fit:contain;">
-                <img src="AFCONS.jpg" alt="AFCONS" style="max-height:110px;width:auto;object-fit:contain;">
+            <div
+                style="flex:1 1 0;min-width:290px;max-width:600px;text-align:left; margin-top:120px;align-self:flex-start;">
+                <h2 style="font-size:1.3rem;font-weight:bold;margin-bottom:14px;">Tyre-Mounted Crane</h2>
+                <p style="font-size:1.07rem;line-height:1.7;color:#222;text-align:justify" class="slide-animation">
+                    Shri Dinesh Crane Services, a pioneer in crane rental solutions since 1988, provides an advanced
+                    range of tyre-mounted cranes renowned for their mobility and adaptability across diverse project
+                    sites. Perfect for applications in construction, logistics, and industrial setups, these cranes
+                    offer rapid setup and high maneuverability on stable surfaces. Each crane undergoes rigorous
+                    maintenance to guarantee reliability and safety. Shri Dinesh Crane Services combines cutting-edge
+                    technology with skilled operators to deliver efficient, client-focused solutions for every lifting
+                    challenge.
+                </p>
+                <img src="TYRE CRANE 2.jpg" alt="Tyre-Mounted Crane"
+                    style="width:85%;border-radius:20px;margin-top:20px;" class="slide-animation">
             </div>
-            <h2 id="steel-heading"
-                style="text-align:center;font-size:1.5rem;font-weight:600;margin-bottom:28px;color:#222;">Iron, Steel,
-                and Zinc Leaders</h2>
-            <div id="steel-logos" class="client-logo-container"
-                style="display:flex;justify-content:center;align-items:center;gap:40px;margin-bottom:48px;flex-wrap:wrap;">
-                <img src="TATA STEEL.jpg" alt="TATA STEEL" style="max-height:110px;width:auto;object-fit:contain;">
-                <img src="VEDANTA.jpg" alt="VEDANTA" style="max-height:120px;width:auto;object-fit:contain;">
-                <img src="HINDUSTAN ZINC.jpg" alt="HINDUSTAN ZINC"
-                    style="max-height:110px;width:auto;object-fit:contain;">
-                <img src="BHUSHAN POWER AND STEEL.webp" alt="BHUSHAN POWER AND STEEL"
-                    style="max-height:110px;width:auto;object-fit:contain;">
-                <img src="ESL STEEL.webp" alt="ESL STEEL" style="max-height:110px;width:auto;object-fit:contain;">
-                <img src="AMNS STEEL.jpg" alt="AMNS STEEL" style="max-height:110px;width:auto;object-fit:contain;">
+        </div>
+        <div style="margin-top:60px;">
+            <h1 class="page-title" style="font-size:2.2rem;font-weight:700;margin-bottom:36px;color:#222;">Precision &
+                Protection: The Pillars of Performance</h1>
+            <div
+                style="display:flex;gap:40px;justify-content:center;align-items:flex-start;flex-wrap:wrap;max-width:1200px;margin:0 auto;">
+                <div style="flex:1 1 0;min-width:290px;max-width:600px;text-align:left;">
+                    <h2 style="font-size:1.3rem;font-weight:bold;margin-bottom:14px;">Equipment Maintenance</h2>
+                    <p style="font-size:1.07rem;line-height:1.7;color:#222;text-align:justify" class="slide-animation">
+                        we regularly perform oil changes, replace oil and air filters, and grease components every 700
+                        hours to ensure lubrication and reduce wear, while also inspecting tyres and crawler tracks for
+                        pressure, tread, tension, and damage. Service engines every 500 km (700 hours), checking it's
+                        hoses, fluids, and the camera diesel sensor for optimal performance. At our organization we keep
+                        accounting of maintenance activities meticulously to track performance and comply with
+                        manufacturer guidelines. Synchronize 700-hours tasks to minimize downtime. We regularly review
+                        logs to anticipate future needs and prevent failures.
+                    </p>
+                    <img src="equipment m.jpg" alt="Equipment Maintenance"
+                        style="width:85%;border-radius:20px;margin-top:20px;" class="slide-animation">
+                </div>
+                <div style="flex:1 1 0;min-width:290px;max-width:600px;text-align:left;margin-top:120px;">
+                    <h2 style="font-size:1.3rem;font-weight:bold;margin-bottom:14px;">Operator Safety Management</h2>
+                    <p style="font-size:1.07rem;line-height:1.7;color:#222;text-align:justify;" class="slide-animation">
+                        Shri Dinesh Crane Services prioritizes operator safety and management by providing comprehensive
+                        training and essential safety gear, including helmets, gloves, and jackets, for crane operators.
+                        The company ensures the medical well-being of its operators through mandatory eye tests, blood
+                        tests, and full body check-ups. To maintain operational efficiency, a single shift includes one
+                        operator, while a double shift includes two operators and more than two helpers. Additionally,
+                        the company offers competitive salaries, a provident fund of ₹20,72,570, and Employee State
+                        Insurance Corporation benefits amounting to ₹57,947, ensuring financial and health security for
+                        its workforce.
+                    </p>
+                    <img src="OSM.jpeg" alt="Operator Safety Management"
+                        style="width:85%;border-radius:20px;margin-top:20px;" class="slide-animation">
+                </div>
             </div>
-            <h2 id="bullet-heading"
-                style="text-align:center;font-size:1.5rem;font-weight:600;margin-bottom:28px;color:#222;">Bullet Sector
-                Collaborators</h2>
-            <div id="bullet-logos" class="client-logo-container"
-                style="display:flex;justify-content:center;align-items:center;gap:40px;margin-bottom:48px;flex-wrap:wrap;">
-                <img src="L&T BULLET.jpg" alt="L&T BULLET" style="max-height:110px;width:auto;object-fit:contain;">
-            </div>
-            <h2 id="rail-heading"
-                style="text-align:center;font-size:1.5rem;font-weight:600;margin-bottom:28px;color:#222;">Our Esteemed
-                Rail Partners</h2>
-            <div id="rail-logos" class="client-logo-container"
-                style="display:flex;justify-content:center;align-items:center;gap:40px;margin-bottom:48px;flex-wrap:wrap;">
-                <img src="INDIAN RAILWAY.jpg" alt="INDIAN RAILWAY"
-                    style="max-height:110px;width:auto;object-fit:contain;">
-                <img src="L&T RAILWAY.jpg" alt="L&T RAILWAY" style="max-height:110px;width:auto;object-fit:contain;">
-            </div>
-            <h2 id="metro-heading"
-                style="text-align:center;font-size:1.5rem;font-weight:600;margin-bottom:28px;color:#222;">Partners in
-                Metro Progress</h2>
-            <div id="metro-logos" class="client-logo-container"
-                style="display:flex;justify-content:center;align-items:center;gap:40px;margin-bottom:48px;flex-wrap:wrap;">
-                <img src="TATA PROJECTS METRO.webp" alt="TATA PROJECTS METRO"
-                    style="max-height:110px;width:auto;object-fit:contain;">
-            </div>
-            <h2 id="aviation-heading"
-                style="text-align:center;font-size:1.5rem;font-weight:600;margin-bottom:28px;color:#222;">Leaders in
-                Aviation</h2>
-            <div id="aviation-logos" class="client-logo-container"
-                style="display:flex;justify-content:center;align-items:center;gap:40px;margin-bottom:48px;flex-wrap:wrap;">
-                <img src="ADANI PORT.png" alt="ADANI PORT" style="max-height:110px;width:auto;object-fit:contain;">
-                <img src="L & T.webp" alt="L & T" style="max-height:110px;width:auto;object-fit:contain;">
-            </div>
-            <h2 id="seaport-heading"
-                style="text-align:center;font-size:1.5rem;font-weight:600;margin-bottom:28px;color:#222;">Our Seaport
-                Partner</h2>
-            <div id="seaport-logos" class="client-logo-container"
-                style="display:flex;justify-content:center;align-items:center;gap:40px;margin-bottom:48px;flex-wrap:wrap;">
-                <img src="ITD.jpg" alt="ITD" style="max-height:110px;width:auto;object-fit:contain;">
-            </div>
-            <h2 id="renewable-heading"
-                style="text-align:center;font-size:1.5rem;font-weight:600;margin-bottom:28px;color:#222;">Renewable
-                Energy Leaders</h2>
-            <div id="renewable-logos" class="client-logo-container"
-                style="display:flex;justify-content:center;align-items:center;gap:40px;margin-bottom:48px;flex-wrap:wrap;">
-                <img src="ADANI GREENS.webp" alt="ADANI GREENS" style="max-height:110px;width:auto;object-fit:contain;">
-                <img src="VESTAS.png" alt="VESTAS" style="max-height:110px;width:auto;object-fit:contain;">
-                <img src="ONGC.png" alt="ONGC" style="max-height:110px;width:auto;object-fit:contain;">
-                <img src="GAIL.jpg" alt="GAIL" style="max-height:110px;width:auto;object-fit:contain;">
-                <img src="RELIANCE.jpg" alt="RELIANCE" style="max-height:110px;width:auto;object-fit:contain;">
-                <img src="NTPCC.png" alt="NTPCC" style="max-height:110px;width:auto;object-fit:contain;">
-                <img src="ADANI WIND.png" alt="ADANI WIND" style="max-height:110px;width:auto;object-fit:contain;">
-                <img src="SUZLON.png" alt="SUZLON" style="max-height:110px;width:auto;object-fit:contain;">
-            </div>
-        </div> <!-- Close container div -->
+        </div>
         <footer class="footer">
             <div class="container">
                 <div class="footer-content">
@@ -270,44 +204,7 @@
         </footer>
         <script src="script.js"></script>
     </main>
-    <script>
-        // Animate elements on page load
-        window.addEventListener('DOMContentLoaded', () => {
-            const elements = [
-                { id: 'main-heading', delay: 0 },
-                { id: 'main-description', delay: 200 },
-                { id: 'cement-heading', delay: 400 },
-                { id: 'cement-logos', delay: 700 },
-                { id: 'infra-heading', delay: 900 },
-                { id: 'infra-logos', delay: 1100 },
-                { id: 'steel-heading', delay: 1400 },
-                { id: 'steel-logos', delay: 1600 },
-                { id: 'bullet-heading', delay: 1800 },
-                { id: 'bullet-logos', delay: 2000 },
-                { id: 'rail-heading', delay: 2200 },
-                { id: 'rail-logos', delay: 2400 },
-                { id: 'metro-heading', delay: 2600 },
-                { id: 'metro-logos', delay: 2800 },
-                { id: 'aviation-heading', delay: 3000 },
-                { id: 'aviation-logos', delay: 3200 },
-                { id: 'seaport-heading', delay: 3400 },
-                { id: 'seaport-logos', delay: 3600 },
-                { id: 'renewable-heading', delay: 3800 },
-                { id: 'renewable-logos', delay: 4000 }
-            ];
 
-            elements.forEach(element => {
-                setTimeout(() => {
-                    const el = document.getElementById(element.id);
-                    if (el) {
-                        el.classList.add('animate');
-                    }
-                }, element.delay);
-            });
-        });
-
-        
-    </script>
 </body>
 
 </html>

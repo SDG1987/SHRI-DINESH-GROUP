@@ -212,7 +212,7 @@ body {
     border: none;
     cursor: pointer;
     padding: 8px;
-    margin-left: auto;
+    margin-left: 0;
 }
 
 .hamburger span {
@@ -2640,8 +2640,12 @@ video:first-of-type {
 
 /* Index page */
 @media (min-width: 1201px) {
-    .index-page .header-cta {
+    .index-page .logo {
         margin-left: auto;
+    }
+
+    .index-page .header-cta {
+        flex-shrink: 0;
     }
 
     .index-page .header-title-group {
@@ -2692,20 +2696,16 @@ video:first-of-type {
 
 /* ===== HEADER TITLE — MOBILE/DESKTOP FIX ===== */
 .title-mobile {
-    display: none;
+    display: flex;
     position: absolute;
-    left: 0;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
     text-align: center;
     font-size: 1.1rem;
     font-weight: 700;
     pointer-events: none;
-}
-
-@media (min-width: 451px) and (max-width: 1200px) {
-    .title-mobile {
-        display: block !important;
-    }
+    z-index: 0;
 }
 .title-desktop {
     display: none;
@@ -2765,4 +2765,30 @@ video:first-of-type {
 /* Keep back button on mobile for specific pages */
 .specific-page .header-back-btn {
     display: inline-flex !important;
+}
+
+/* Crane pages — hamburger left, logo right on mobile */
+@media (max-width: 1200px) {
+    .crane-page .hamburger {
+        margin-left: 0 !important;
+        order: 1;
+    }
+    .crane-page .logo {
+        margin-left: auto !important;
+        order: 3;
+    }
+    .crane-page .title-mobile {
+        order: 2;
+    }
+}
+
+/* Show back button on desktop only */
+.header-back-btn {
+    display: none !important;
+}
+
+@media (min-width: 1201px) {
+    .header-back-btn {
+        display: inline-flex !important;
+    }
 }

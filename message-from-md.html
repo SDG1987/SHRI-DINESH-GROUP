@@ -4,271 +4,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shri Dinesh Group - Crane Services, Real Estate & Transportation</title>
+    <title>Message from MD - Shri Dinesh Group</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* ── DESKTOP (>1200px): Logo LEFT | Title CENTER | CTA RIGHT ── */
-        @media (min-width: 1201px) {
-            .index-header-container {
-                display: flex;
-                align-items: center;
-            }
-
-            /* Hide hamburger on desktop */
-            .index-header-container .hamburger {
-                display: none !important;
-            }
-
-            /* Logo — far LEFT */
-            .index-logo {
-                order: 1;
-                flex-shrink: 0;
-                margin-right: 20px;
-            }
-
-            /* Title — CENTER (fills remaining space) */
-            .index-title-desktop {
-                order: 2;
-                flex: 1;
-                text-align: center;
-                display: flex !important;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .index-title-mobile {
-                display: none !important;
-            }
-
-            /* CTA — far RIGHT */
-            .index-cta {
-                order: 3;
-                flex-shrink: 0;
-                display: flex !important;
-                gap: 15px;
-                align-items: center;
-            }
+        .slide-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
         }
 
-        /* ── MOBILE (≤1200px): Hamburger LEFT | Title CENTER | Logo RIGHT ── */
-        @media (max-width: 1200px) {
-            .index-header-container {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-
-            /* Show hamburger on mobile */
-            .index-header-container .hamburger {
-                display: flex !important;
-                order: 1;
-                flex-shrink: 0;
-                margin: 0;
-            }
-
-            /* Title mobile — CENTER */
-            .index-title-mobile {
-                order: 2;
-                display: block !important;
-                position: absolute;
-                left: 55px;
-                white-space: nowrap;
-                pointer-events: none;
-            }
-
-            .index-title-desktop {
-                display: none !important;
-            }
-
-            /* Hide CTA on mobile */
-            .index-cta {
-                display: none !important;
-            }
-
-            /* Logo — far RIGHT */
-            .index-logo {
-                order: 3;
-                flex-shrink: 0;
-                margin-left: auto;
-            }
+        .slide-in.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
 
-<body class="index-page crane-page">
-
-    <!-- Header -->
+<body class="specific-page">
     <header class="header">
-        <div class="header-container index-header-container" style="position:relative;">
+        <div class="header-container"
+            style="display:flex; align-items:center; justify-content:space-between; position:relative;">
 
-            <!-- Hamburger (mobile only) -->
-            <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <!-- Back arrow left -->
+            <a href="index.html" class="header-back-btn"
+                style="flex-shrink:0; width:40px; position:relative; z-index:2;">&#10094;</a>
 
-            <!-- Logo -->
-            <div class="logo index-logo">
+            <!-- Header tagline center (desktop only) -->
+            <div class="header-title-group" style="flex:0 0 auto; text-align:center;">
+                <h1 class="header-page-title">MD's Message</h1>
+                <p class="header-page-subtitle">A word from our Managing Director
+                </p>
+            </div>
+
+            <!-- Logo right -->
+            <div class="logo" style="flex-shrink:0; position:relative; z-index:2;">
                 <a href="index.html">
                     <img src="UPDATED LOGO.jpg" alt="Shri Dinesh Group Logo" class="logo-img"
                         style="height:50px; width:160px; object-fit:contain;">
                 </a>
             </div>
 
-            <!-- Title — mobile -->
-            <span class="title-mobile index-title-mobile"><b>Shri Dinesh Group</b></span>
-
-            <!-- Title — desktop -->
-            <div class="title-desktop index-title-desktop">
-                <div class="title-desktop-title">Shri Dinesh Group</div>
-                <div class="title-desktop-sub">Crane Services &nbsp;·&nbsp; Warehousing &nbsp;·&nbsp; Transportation
-                </div>
-            </div>
-
-            <!-- CTA Buttons (desktop only) -->
-            <div class="header-cta index-cta">
-                <a href="message-from-md.html" class="cta-button">Read MD's Message</a>
-                <a href="contact.html" class="cta-button cta-button-secondary">Contact Us</a>
-            </div>
-
-        </div>
-
-        <!-- Mobile Menu Drawer -->
-        <div class="mobile-menu" id="mobileMenu">
-            <a href="message-from-md.html" class="mobile-cta-button">Read MD's Message</a>
-            <a href="contact.html" class="mobile-cta-button mobile-cta-secondary">Contact Us</a>
         </div>
     </header>
 
-    <!-- Hero Video Section -->
-    <section class="hero-video">
-        <div class="video-container">
-            <video autoplay muted loop class="hero-vid">
-                <source src="video (1).mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="video-overlay">
-                <h1 class="hero-title">Shri Dinesh Group - Your Trusted Partners</h1>
-                <p class="hero-subtitle">Diversified logistics and infrastructure powerhouse since 1987</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services">
+    <!-- MD Message Section -->
+    <section class="md-message slide-in">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <p class="section-description">Explore our expertise in crane services, real estate solutions, and efficient
-                transportation logistics.</p>
-            <div class="services-grid">
-                <div class="service-card" onclick="window.location.href='crane-services.html'">
-                    <div class="service-image">
-                        <img src="SDG CRANE.jpg" alt="Crane Services" class="service-img">
+            <div class="message-content">
+                <div class="md-profile">
+                    <div class="md-image">
+                        <img src="MAHESH JOSHI.jpeg" alt="Mahesh Joshi, Managing Director" class="md-photo">
                     </div>
-                    <div class="service-content">
-                        <h3 class="service-title">Crane Services</h3>
-                        <p class="service-description">Professional crane operations and heavy lifting solutions for
-                            industrial projects.</p>
-                        <div class="service-overlay">
-                            <span class="learn-more">Learn More</span>
-                        </div>
+                    <div class="md-info">
+                        <h2>Mahesh Joshi</h2>
+                        <p class="md-name">Managing Director, Shri Dinesh Group</p>
                     </div>
                 </div>
 
-                <div class="service-card" onclick="window.location.href='real-estate.html'">
-                    <div class="service-image">
-                        <img src="warehouse.jpeg" alt="Real Estate" class="service-img">
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-title">Warehousing</h3>
-                        <p class="service-description">Industrial properties, warehouses, and commercial real estate
-                            solutions.</p>
-                        <div class="service-overlay">
-                            <span class="learn-more">Learn More</span>
-                        </div>
-                    </div>
-                </div>
+                <div class="message-text">
+                    <p class="slide-in">Dear Valued Partners and Clients,</p>
+                    <p class="slide-in">In 1987, we began this journey with a single truck and a deep belief in hard
+                        work, integrity, and God. Today, Shri Dinesh Group stands as a diversified logistics and
+                        infrastructure powerhouse with a presence across transportation, warehousing, and heavy lifting
+                        — all built on the solid foundation of trust and discipline.</p>
+                    <p class="slide-in">Our early growth was fueled by two unwavering principles:</p>
 
-                <div class="service-card" onclick="window.location.href='transportation.html'">
-                    <div class="service-image">
-                        <img src="transportation.jpg" alt="Transportation" class="service-img">
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-title">Transportation</h3>
-                        <p class="service-description">Logistics and transportation services for industrial and
-                            commercial needs.</p>
-                        <div class="service-overlay">
-                            <span class="learn-more">Learn More</span>
-                        </div>
-                    </div>
+                    <ul class="commitment-list slide-in">
+                        <li>An uncompromising focus on customer satisfaction, and</li>
+                        <li>A spotless track record of zero defaults on EMI payments.</li>
+                    </ul>
+
+                    <p class="slide-in">With the support of our valued financial partners — ICICI Bank, Sundaram
+                        Finance, and Thane Janta Sahakari Bank — we expanded to a fleet of 100 trucks within the first
+                        decade. Our client portfolio grew to include esteemed names like Reliance, Castrol, Henkel, and
+                        IG Petrochemicals.</p>
+                    <p class="slide-in">We later diversified into warehousing, acquiring 21 acres of agricultural land
+                        and transforming it into a thriving logistics park in Bhiwandi — India's warehousing capital —
+                        now home to Grade A clients like Safexpress and BharatBenz.</p>
+                    <p class="slide-in">In 2008, the second generation of the Joshi family entered the business,
+                        bringing in fresh ideas, global education, and a long-term vision. We imported our first
+                        brand-new crane from Germany, establishing a bold precedent in an unorganised industry dominated
+                        by second-hand equipment. Staying true to our values, we committed to sourcing only brand-new
+                        cranes directly from OEMs. Today, our crane rental division proudly operates 110 cranes — all
+                        acquired and managed by our next generation, graduates of premier institutions like IIT
+                        Kharagpur, the University of Westminster, and King's College London.</p>
+                    <p class="slide-in">At the heart of our journey is a firm belief in:</p>
+
+                    <ul class="commitment-list slide-in">
+                        <li>God's grace,</li>
+                        <li>World-class education,</li>
+                        <li>A family-first philosophy, and</li>
+                        <li>The timeless wisdom passed down by my grandfather:</li>
+                    </ul>
+
+                    <p class="quote slide-in">"Mehnat itni khamoshi se karo ki safalta shor macha de."</p>
+                    <p class="slide-in">Thank you for placing your trust in us. We remain committed to excellence — in
+                        every lift, every delivery, every relationship.</p>
+                    <p class="signature slide-in">
+                        <strong>Mahesh Joshi</strong><br>
+                        Managing Director, Shri Dinesh Group
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about-section">
+    <!-- Company Values -->
+    <section class="company-values slide-in">
         <div class="container">
-            <div class="about-content">
-                <h2>About Shri Dinesh Group</h2>
-                <p>Since 1987, we have grown from a single truck into a diversified logistics and infrastructure group,
-                    built on trust, discipline, and execution excellence.</p>
-                <hr class="stats-divider">
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <h3>120+</h3>
-                        <p>Cranes</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>150+</h3>
-                        <p>Trucks & Trailers</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>100+</h3>
-                        <p>Acres of Warehouse</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>38+</h3>
-                        <p>Years of Experience</p>
-                    </div>
+            <h2 class="section-title">Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card slide-in">
+                    <div class="value-icon">🙏</div>
+                    <h3>God's Grace</h3>
+                    <p>We believe in divine guidance and maintain our faith as the foundation of our business ethics.
+                    </p>
+                </div>
+                <div class="value-card slide-in">
+                    <div class="value-icon">🎓</div>
+                    <h3>World-Class Education</h3>
+                    <p>Our next generation brings global education from premier institutions to drive innovation.</p>
+                </div>
+                <div class="value-card slide-in">
+                    <div class="value-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Family-First Philosophy</h3>
+                    <p>We operate as a family business, passing down values and wisdom through generations.</p>
+                </div>
+                <div class="value-card slide-in">
+                    <div class="value-icon">💪</div>
+                    <h3>Hard Work & Discipline</h3>
+                    <p>We believe in silent hard work that creates success through dedication and perseverance.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Meet Our Founders Section -->
-    <section class="founders-section">
+    <!-- Contact CTA -->
+    <section class="contact-cta slide-in">
         <div class="container">
-            <h2 class="section-title">Meet Our Founders</h2>
-            <div class="founders-grid">
-                <div class="founder-card"
-                    onclick="window.open('https://www.linkedin.com/in/sumit-joshi-78895536?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', '_blank')">
-                    <img src="SUMIT JOSHI.jpg" alt="Sumit Joshi" class="founder-img">
-                    <h3 class="founder-name">Sumit Joshi</h3>
-                </div>
-                <div class="founder-card"
-                    onclick="window.open('https://www.linkedin.com/in/ashwin-joshi-270456229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', '_blank')">
-                    <img src="Ashwin Joshi.jpg" alt="Ashwin Joshi" class="founder-img">
-                    <h3 class="founder-name">Ashwin Joshi</h3>
-                </div>
-                <div class="founder-card"
-                    onclick="window.open('https://www.linkedin.com/in/kartik-joshi-0b97b994?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', '_blank')">
-                    <img src="KARTIK JOSHI.jpg" alt="Kartik Joshi" class="founder-img">
-                    <h3 class="founder-name">Kartik Joshi</h3>
-                </div>
-            </div>
-            <div class="founders-grid founders-grid-double">
-                <div class="founder-card"
-                    onclick="window.open('https://www.linkedin.com/in/shreyjoshi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', '_blank')">
-                    <img src="Shrey Joshi.jpg" alt="Shrey Joshi" class="founder-img">
-                    <h3 class="founder-name">Shrey Joshi</h3>
-                </div>
-                <div class="founder-card"
-                    onclick="window.open('https://www.linkedin.com/in/manan-joshi-24a25a194?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', '_blank')">
-                    <img src="MANAN JOSHI.jpg" alt="MANAN JOSHI" class="founder-img">
-                    <h3 class="founder-name">Manan Joshi</h3>
+            <div class="cta-content">
+                <h2>Let's Build Success Together</h2>
+                <p>Ready to experience the Shri Dinesh Group difference? Contact us today to discuss your needs.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                    <a href="index.html" class="btn btn-secondary">Explore Services</a>
                 </div>
             </div>
         </div>
@@ -277,11 +157,13 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content"></div>
+            <div class="footer-content">
+                <!-- Removed logo and links -->
+            </div>
             <div class="footer-extra">
                 <div class="footer-contact-columns">
                     <div class="footer-contact-block">
-                        <h3>HEAD OFFICE</h3>
+                        <h3>HEAD OFFICE </h3>
                         <p>902-903, B- Wing, Lodha Supremus II,<br>Road No. 22, Wagle Estate,<br>Thane West, Mumbai,
                             Maharashtra - 400604</p>
                         <h3 class="branch-title">BRANCH OFFICE</h3>
@@ -324,6 +206,21 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        const slideElements = document.querySelectorAll('.slide-in');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        slideElements.forEach(el => observer.observe(el));
+    </script>
 </body>
 
 </html>

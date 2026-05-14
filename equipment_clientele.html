@@ -65,7 +65,7 @@
     </style>
 </head>
 
-<body>
+<body class="crane-page">
     <header class="header">
         <div class="header-container">
 
@@ -81,10 +81,10 @@
             <!-- Back arrow -->
             <a href="index.html" class="header-back-btn">&#10094;</a>
 
-            
+            <span class="title-mobile"><b>Clientele</b></span>
 
             <div class="title-desktop">
-                <div class="title-desktop-title">CLIENTELE</div>
+                <div class="title-desktop-title">Clientele</div>
                 <div class="title-desktop-sub">Trusted by Industry Leaders Across Various Sectors</div>
             </div>
 
@@ -306,18 +306,7 @@
             });
         });
 
-        // Placeholder function for quote submission
-        function submitQuote() {
-            const email = document.querySelector('#quote-form input[type="email"]').value;
-            const requirement = document.querySelector('#quote-form input[placeholder="Crane Requirement"]').value;
-            const location = document.querySelector('#quote-form input[placeholder="Location"]').value;
-            if (email && requirement && location) {
-                alert('Quote request submitted successfully!');
-                // In a real application, this would send data to a server
-            } else {
-                alert('Please fill in all fields.');
-            }
-        }
+        
     </script>
 </body>
 

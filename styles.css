@@ -2712,7 +2712,7 @@ video:first-of-type {
     position: absolute;
     left: 80px; 
     right: 0;
-    text-align: left;
+    text-align: center;
     pointer-events: none;
     line-height: 1.3;
 }
@@ -2752,7 +2752,7 @@ video:first-of-type {
     .title-desktop {
         left: 80px;
         right: 0;
-        text-align: Left;
+        text-align: center;
     }
 }
 

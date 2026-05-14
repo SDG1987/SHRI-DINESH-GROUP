@@ -60,7 +60,7 @@ function validateApiResponse(response, responseJson, context) {
         console.log(`${icon} ${r.name} — ${r.detail}`);
     });
     const allPassed = results.every(r => r.passed);
-    console.log(allPassed ? '✅ All tests passed' : '⚠️ Some tests failed');
+    console.log(allPassed ? ' All tests passed' : ' Some tests failed');
     console.groupEnd();
 
     return { allPassed, results };
@@ -357,7 +357,7 @@ document.addEventListener('DOMContentLoaded', function () {
     restartAnimation(centerImgs, 'slide-center');
     restartAnimation(rightImgs, 'slide-right');
 
-    console.log('Shri Dinesh Group website loaded successfully!');
+    
 });
 
 

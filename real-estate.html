@@ -7,6 +7,17 @@
     <title>Real Estate - Shri Dinesh Group</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @media (min-width: 1201px) {
+            .header-title-group {
+                display: block !important;
+            }
+
+            .title-mobile {
+                display: none !important;
+            }
+        }
+    </style>
 </head>
 
 <body class="specific-page">
@@ -19,12 +30,13 @@
             <a href="index.html" class="header-back-btn"
                 style="flex-shrink:0; width:40px; position:relative; z-index:2;">&#10094;</a>
 
-
+            <!-- Mobile title (mobile only) -->
+            <span class="title-mobile"><b>WAREHOUSING</b></span>
 
             <!-- Header tagline center (desktop only) -->
-            <div class="header-title-group" style="flex:0 0 auto; text-align:center;">
-                <h1 class="header-page-title">Warehousing</h1>
-                <p class="header-page-subtitle">Industrial properties,warehouses, and commercial real estate solutions
+            <div class="header-title-group" style="flex:0 0 auto; text-align:center; display:none;">
+                <h1 class="header-page-title">WAREHOUSING</h1>
+                <p class="header-page-subtitle">Industrial properties, warehouses, and commercial real estate solutions
                 </p>
             </div>
 

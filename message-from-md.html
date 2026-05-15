@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        @media (min-width: 1201px) {
+            .header-title-group {
+                display: block !important;
+            }
+
+            .title-mobile {
+                display: none !important;
+            }
+        }
+
         .slide-in {
             opacity: 0;
             transform: translateY(30px);
@@ -30,13 +40,14 @@
             <a href="index.html" class="header-back-btn"
                 style="flex-shrink:0; width:40px; position:relative; z-index:2;">&#10094;</a>
 
-            <!-- Header tagline center (desktop only) -->
-            <div class="header-title-group" style="flex:0 0 auto; text-align:center;">
-                <h1 class="header-page-title">MD's Message</h1>
-                <p class="header-page-subtitle">A word from our Managing Director
-                </p>
-            </div>
+            <!-- Mobile title -->
+            <span class="title-mobile"><b>MD's MESSAGE</b></span>
 
+            <!-- Header tagline center (desktop only) -->
+            <div class="header-title-group" style="flex:0 0 auto; text-align:center; display:none;">
+                <h1 class="header-page-title">MD's MESSAGE</h1>
+                <p class="header-page-subtitle">A word from our Managing Director</p>
+            </div>
             <!-- Logo right -->
             <div class="logo" style="flex-shrink:0; position:relative; z-index:2;">
                 <a href="index.html">

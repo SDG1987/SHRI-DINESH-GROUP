@@ -7,6 +7,33 @@
     <title>Transportation - Shri Dinesh Group</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @media (min-width: 1201px) {
+            .title-desktop {
+                display: block !important;
+                position: absolute !important;
+                left: 0 !important;
+                right: 0 !important;
+                text-align: center !important;
+                pointer-events: none !important;
+                z-index: 0 !important;
+            }
+
+            .title-mobile {
+                display: none !important;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .title-desktop {
+                display: none !important;
+            }
+
+            .title-mobile {
+                display: flex !important;
+            }
+        }
+    </style>
 </head>
 
 <body class="specific-page">
@@ -19,22 +46,23 @@
             <a href="index.html" class="header-back-btn"
                 style="flex-shrink:0; width:40px; position:relative; z-index:2;">&#10094;</a>
 
-            <!-- Header tagline center (desktop only) -->
-            <div class="header-title-group" style="flex:0 0 auto; text-align:center;">
-                <h1 class="header-page-title">Transportation</h1>
-                <p class="header-page-subtitle">Logistics and Transportation Services
-                </p>
+            <!-- Mobile title (mobile only, via .title-mobile) -->
+            <span class="title-mobile" style="order:2;">TRANSPORTATION</span>
+
+            <!-- Desktop title + subtitle (desktop only, via .title-desktop) — absolutely centered -->
+            <div class="title-desktop"
+                style="position:absolute; left:0; right:0; text-align:center; pointer-events:none; z-index:0; display:none;">
+                <p class="header-page-title"><b>TRANSPORTATION</b></p>
+                <p class="header-page-subtitle">Logistics and Transportation Services</p>
             </div>
 
             <!-- Logo right -->
-            <div class="logo" style="flex-shrink:0; position:relative; z-index:2;">
+            <div class="logo" style="flex-shrink:0; position:relative; z-index:2; margin-left:auto;">
                 <a href="index.html">
                     <img src="UPDATED LOGO.jpg" alt="Shri Dinesh Group Logo" class="logo-img"
                         style="height:50px; width:160px; object-fit:contain;">
                 </a>
             </div>
-
-
         </div>
     </header>
 

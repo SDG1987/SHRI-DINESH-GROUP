@@ -2640,17 +2640,43 @@ video:first-of-type {
 
 /* Index page */
 @media (min-width: 1201px) {
+    .index-page .header-container {
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .index-page .logo {
-        margin-left: auto;
+        margin-left: 0;
+        flex-shrink: 0;
+        order: 1;
+    }
+
+    .index-page .title-desktop {
+        display: block !important;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        pointer-events: none;
+        z-index: 0;
     }
 
     .index-page .header-cta {
+        display: flex !important;
         flex-shrink: 0;
+        order: 3;
+        margin-left: auto;
+        z-index: 1;
+        position: relative;
     }
 
-    .index-page .header-title-group {
-        flex: 1;
-        text-align: center;
+    .index-page .hamburger {
+        display: none !important;
+    }
+
+    .index-page .title-mobile {
+        display: none !important;
     }
 }
 
@@ -2701,7 +2727,7 @@ video:first-of-type {
     left: 55px;
     transform: none;
     white-space: nowrap;
-    text-align: left;
+    text-align: center;
     font-size: 1.1rem;
     font-weight: 700;
     pointer-events: none;
@@ -2709,16 +2735,12 @@ video:first-of-type {
 }
 .title-desktop {
     display: none;
-    position: absolute;
-    left: 80px; 
-    right: 0;
-    text-align: center;
     pointer-events: none;
     line-height: 1.3;
 }
 
 .title-desktop-title {
-    font-size: 1.1rem;
+    font-size: 2.0rem;
     font-weight: 700;
     color: #000000;
     margin: 0;
